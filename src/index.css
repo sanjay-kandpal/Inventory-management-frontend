@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+/* ICONS */
+#deleteIcon{
+ color: red;
+ margin-right: 7px;
+ font-size: 25px;
+ cursor: pointer;
+}
+#viewIcon{
+  color: darkcyan;
+  margin-right: 7px;
+  font-size: 25px;
+  cursor: pointer;
+}
+#editIcon{
+  color: darkcyan;
+ font-size: 25px;
+ cursor: pointer;
+}
+
+hr{
+  border: 1px solid rgb(243, 179, 179);
+}
+main{
+  background-color: rgb(7, 16, 96);
+}
+#index{
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  padding: 10px;
+  width: 968px;
+  border: 1px solid black;
+}
+
+.flex-container{
+  display: flex;
+  /* margin: 32px auto; */
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container{
+  margin: 32px auto;
+}
+li{
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-right: 8px;
+  font-size: 18px;
+  color: white;
+}
+a:hover{
+  text-decoration: underline  aqua 2px;
+}
+#heading{
+  color: white;
+  width: 250px;
+  font-family: 'Roboto';
+  margin-top: -3.5px;
+  
+}
+.para{
+  color: white;
+  margin-top: 18px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  word-spacing: 6px;
+  margin-bottom: 30px;
+}
+#free{
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto';
+  padding: 12px;
+}
+.brand{
+  width: 284px;
+  margin: 0;
+  margin-top: 48px;
+}
+.brand h3{
+
+  padding: 12px;
+  font-size: 28px;
+  font-weight: 200;
+  font-family: 'Roboto';
+  color: white;
+}
+.owners{
+  color: white;
+  text-align: center;
+  font-family: 'Roboto';
+}
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 450px;
+  background-color: white;
+  min-height: 300px;
+}
+
+/* Login */
+#login-heading{
+  color: orange;
+  font-weight: 600;
+}
+.login-container{
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 380px;
+  margin: 20vh auto;
+  padding: 9px;
+  text-align: center;
+  border: 1px solid black;
+
+  background-color: aliceblue;
+}
+#login label{
+  /* border: 45px solid black; */
+  margin: 16px;
+  display: block;
+}
+#login label>input{
+  width: 100%;
+  border-radius: 4px;
+  border: 0px;
+  border-bottom: 4px solid rgb(228, 203, 203);
+  background-color: rgb(169, 226, 236);
+  padding: 12px;
+  outline: none;
+  font-family: 'Roboto';
+}
+
+#login-btn{
+  padding: 9px;
+  width: 90%;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(45, 63, 219);
+  border-radius: 4px; 
+}
+
+/* HomePage Dashboard CSS */
+.HomePage{
+  align-self: stretch;
+  min-height: 600px;
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid black;
+}
+.HomePage-container{
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: row;
+  width: 100%;
+}
+.HomePage-container div{
+  padding: 12px;
+  width: 100%;
+}
+.welcome{
+  
+  display: inline-block;
+}
+#logout{
+  background-color: rgb(69, 42, 242);
+  border: 0;
+  font-family: 'Roboto';
+  float: right;
+  padding: 8px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+
+}
+
+#stats{
+  border: 1px solid black;
+}
+
+#stats div{
+  
+  border: 1px solid black;
+  display: inline-block;
+  margin: 16px;
+  width: 160px;
+  height: 60px;
+}
+
+/* table */
+
+table{
+  font-family: 'Roboto';
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 36px;
+}
+td,th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #dddddd;
+}
+
+/* NavBar */
+.NavBar {
+  align-self:flex-start;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 25%;
+  min-height: 100vh;
+}
+.active{
+  border-right: 8px solid blueviolet;
+  
+}
+
+/* Panel */
+.panel{
+  font-family: 'Roboto';
+  padding: 13px;
+
+  color: blueviolet;
+  display: none;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.accordian{
+  width: 100%;
+  padding: 13px;
+  color: blueviolet;
+  cursor: pointer;
+  font-size: 16px;
+}
+.profile-container{
+  margin: 16px auto;
+  display: flex;
+  width: 800px;
+  height: 291.413px;
+  padding: 4px;
+  background-color: white;
+}
+.profile-photo{
+  width: 360px;
+}
+#image{
+  width: 100%;
+  height: 100%;
+  
+}
+#details{
+  border: 1px solid black;
+  width: 100%;;
+}
+
+/* Add new Product */
+
+.add-product{
+  border: 1px solid black;
+  width: 550px;
+  margin: 16px;
+}
+.file-upload{
+  border: 1px solid black;
+  padding: 2px;
+}
+input[type="file"]{
+  border: 1px solid black;
+  padding: 8px;
+  width: 100%;
+}
+
+#preview{
+  width: 100%;
+  padding: 4px;
+}
+.wrapper-class{
+  padding: 1px;
+  border: 1px solid black;
+  width: 100%;
+}
+.toolbar-class{
+  background-color: #dddddd;
+}
+
+/* Modal Container */
+
+#modal-container{
+  opacity: 1;
+  z-index: 1;
+  border: 1px solid black;
+  background-color: #ffffff;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.toggle{
+  display: none;
+  z-index: 1; 
+}
+
+/* Product Detail Page*/
+
+#product-container{
+  border: 1px solid black;
+  width: 400px;
+  background-color: white;
+}
+
+#product-img{
+  width: 100%;
+  padding: 4px;
+}
+
+.editorClassName{
+  padding: 0;
+  border: 1px solid black;
+  background-color: white;
+}
+.wrapperClassName{
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+}
